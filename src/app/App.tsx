@@ -106,8 +106,12 @@ export default function App() {
       </section>
 
       {/* FEATURED ARTICLES */}
-      <section className="px-6 py-28">
-        <div className="max-w-[1550px] mx-auto">
+      <section className="px-6 py-28 relative overflow-hidden">
+        {/* Texture overlay */}
+        <div className="absolute inset-0 opacity-5" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E")`
+        }} />
+        <div className="relative z-10 max-w-[1550px] mx-auto">
           <div className="mb-16">
             <h2 className="mb-0 text-5xl uppercase">Featured Articles</h2>
           </div>
@@ -139,7 +143,7 @@ export default function App() {
       </section>
 
       {/* COMMUNITY PARTICIPATION */}
-      <section className="px-6 py-24 bg-[#9B002F] relative overflow-hidden">
+      <section className="px-6 py-24 relative overflow-hidden">
         {/* Geometric pattern overlay */}
         <div className="absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none">
           <svg width="100%" height="100%" viewBox="0 0 1200 400" preserveAspectRatio="none" className="w-full h-full">
@@ -175,8 +179,12 @@ export default function App() {
       </section>
 
       {/* HOSTS */}
-      <section className="px-6 py-20">
-        <div className="max-w-[1550px] mx-auto">
+      <section className="px-6 py-20 relative overflow-hidden">
+        {/* Texture overlay */}
+        <div className="absolute inset-0 opacity-5" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E")`
+        }} />
+        <div className="relative z-10 max-w-[1550px] mx-auto">
           <div className="mb-12">
             <h2 className="mb-0">MEET THE HOSTS</h2>
           </div>
