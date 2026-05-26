@@ -2,13 +2,13 @@
 
 :root {
   --font-size: 16px;
-  --background: #132f57;
+  --background: #15223E;
   --foreground: #ffffff;
   --card: #0f294d;
   --card-foreground: #ffffff;
   --popover: #0f294d;
   --popover-foreground: #ffffff;
-  --primary: #e73531;
+  --primary: #9B002F;
   --primary-foreground: #ffffff;
   --secondary: #9b002f;
   --secondary-foreground: #ffffff;
@@ -16,7 +16,7 @@
   --muted-foreground: #ffffff;
   --accent: #9b002f;
   --accent-foreground: #ffffff;
-  --destructive: #e73531;
+  --destructive: #9B002F;
   --destructive-foreground: #ffffff;
   --border: rgba(255, 255, 255, 0.18);
   --input: transparent;
@@ -24,22 +24,22 @@
   --switch-background: #cbced4;
   --font-weight-medium: 800;
   --font-weight-normal: 700;
-  --ring: #e73531;
+  --ring: #9B002F;
   --chart-1: #9b002f;
-  --chart-2: #e73531;
+  --chart-2: #9B002F;
   --chart-3: #132f57;
   --chart-4: #0f294d;
   --chart-5: #f1f4f8;
   --radius: 0.75rem;
   --sidebar: #0f294d;
   --sidebar-foreground: #ffffff;
-  --sidebar-primary: #e73531;
+  --sidebar-primary: #9B002F;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #132f57;
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: rgba(255, 255, 255, 0.18);
-  --sidebar-ring: #e73531;
-  --heading-color: rgb(175, 181, 182);
+  --sidebar-ring: #9B002F;
+  --heading-color: #ffffff;
 }
 
 .dark {
@@ -143,7 +143,7 @@
   h3 {
     font-family: "Barlow", sans-serif, system-ui;
     font-weight: 700;
-    color: rgb(175, 181, 182);
+    color: #fff;
     line-height: 48px;
   }
 

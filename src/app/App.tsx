@@ -1,11 +1,10 @@
 export default function App() {
   return (
-    <div className="min-h-screen bg-background font-sans">
-      {/* HEADER */}
-      <header className="bg-gradient-to-r from-secondary to-[#740021] px-6 py-5">
-        <div className="max-w-[1160px] mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <div className="w-2 h-12 bg-primary" />
+    <div className="min-h-screen bg-background font-sans relative">
+      {/* HEADER - Transparent overlay */}
+      <header className="absolute top-0 left-0 right-0 z-50 px-6 py-6">
+        <div className="max-w-[1550px] mx-auto flex items-center justify-between">
+          <div className="mb-2">
             <span className="text-white text-sm tracking-[0.15em] font-bold">KILL MY CRAZY</span>
           </div>
 
@@ -21,37 +20,52 @@ export default function App() {
         </div>
       </header>
 
-      {/* HERO SECTION */}
-      <section className="border-b border-border px-6 py-32">
-        <div className="max-w-[1160px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-0 items-center">
-            <div className="md:col-span-7 pr-0 md:pr-16">
-              <div className="flex items-center gap-3 mb-8">
-                <div className="w-1 h-12 bg-primary" />
+      {/* HERO SECTION - Full-width dark cinematic */}
+      <section className="relative min-h-screen flex items-center overflow-hidden">
+        {/* Dark gradient background with atmospheric texture */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1a] via-[#0f1429] to-[#1a0a20]" />
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDIiLz4KPC9zdmc+')] opacity-30" />
+
+        {/* Atmospheric glow effects */}
+        <div className="absolute top-20 right-20 w-96 h-96 bg-[#9B002F]/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-20 w-80 h-80 bg-secondary/30 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-900/20 rounded-full blur-3xl" />
+
+        {/* Content */}
+        <div className="relative z-10 max-w-[1550px] mx-auto px-6 py-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+              <div className="mb-8">
                 <span className="text-primary text-xs tracking-[0.25em] font-bold">PODCAST</span>
               </div>
-              <h1 className="mb-10 leading-[1.1] uppercase">
+              <h1 className="mb-8 leading-[0.95] uppercase text-white text-6xl md:text-7xl font-black tracking-tight">
                 EXPOSING THE NOISE
               </h1>
-              <p className="text-2xl text-muted-foreground font-bold leading-relaxed mb-10 max-w-lg">
+              <p className="text-xl text-white/80 font-medium leading-relaxed mb-10 max-w-lg">
                 Dedicated to exposing the scripts that break us down and make us crazy. We offer coffee table conversations where friends call each other out.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="#" className="px-10 py-4 bg-primary text-white text-xs tracking-[0.15em] font-bold hover:bg-white hover:text-primary transition-colors rounded-lg text-center">
+                <a href="#" className="px-10 py-4 bg-[#9B002F] text-white text-xs tracking-[0.15em] font-bold hover:shadow-lg hover:shadow-[#9B002F]/30 transition-all rounded-lg text-center">
                   WATCH NOW
                 </a>
-                <a href="#" className="px-10 py-4 border-2 border-primary text-primary text-xs tracking-[0.15em] font-bold hover:bg-primary hover:text-white transition-colors rounded-lg text-center">
+                <a href="#" className="px-10 py-4 border-2 border-white/30 text-white text-xs tracking-[0.15em] font-bold hover:bg-white hover:text-[#0a0a1a] transition-all rounded-lg text-center">
                   RECORD YOUR TRUTH
                 </a>
               </div>
             </div>
-            <div className="md:col-span-5 relative mt-12 md:mt-0">
+            <div className="relative">
               <div className="relative">
-                <div className="w-full aspect-[4/5] bg-card border-2 border-border overflow-hidden rounded-lg">
-                  <img src="https://picsum.photos/seed/podcast-hero/600/750" alt="Podcast Visual" className="w-full h-full object-cover" />
+                {/* Circular glowing frame */}
+                <div className="w-96 h-96 md:w-[500px] md:h-[500px] rounded-full border-4 border-[#9B002F]/30 overflow-hidden relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#9B002F]/20 via-purple-900/20 to-[#9B002F]/20" />
+                  <img src="https://picsum.photos/seed/podcast-hero/600/750" alt="Podcast Visual" className="w-full h-full object-cover mix-blend-overlay" />
                 </div>
-                <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-primary opacity-20 rounded-full" />
-                <div className="absolute -top-8 -left-8 w-24 h-24 bg-secondary opacity-30 rounded-full" />
+                {/* Rim lighting effects */}
+                <div className="absolute -inset-4 bg-gradient-to-r from-[#9B002F]/40 to-purple-900/40 rounded-full blur-xl -z-10" />
+                <div className="absolute -inset-2 bg-gradient-to-br from-[#9B002F]/30 to-[#9b002f]/30 rounded-full blur-lg -z-10" />
+                {/* Glow orbs */}
+                <div className="absolute -top-8 -right-8 w-24 h-24 bg-[#9B002F]/40 rounded-full blur-2xl animate-pulse" />
+                <div className="absolute -bottom-8 -left-8 w-20 h-20 bg-purple-500/40 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '1s' }} />
               </div>
             </div>
           </div>
@@ -59,56 +73,42 @@ export default function App() {
       </section>
 
       {/* FEATURED / LATEST EPISODES */}
-      <section className="border-b border-border px-6 py-24">
-        <div className="max-w-[1160px] mx-auto">
-          <div className="flex items-center gap-4 mb-16">
-            <div className="w-2 h-16 bg-primary" />
+      <section className="px-6 py-24">
+        <div className="max-w-[1550px] mx-auto">
+          <div className="mb-16">
             <h2 className="mb-0 text-5xl uppercase">Latest Episodes</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-            <div className="md:col-span-8 group border-2 border-border bg-card hover:border-primary transition-colors rounded-lg overflow-hidden">
-              <div className="w-full h-80 overflow-hidden mb-6">
-                <img src="https://picsum.photos/seed/episode-1/800/450" alt="Episode 1" className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-              </div>
-              <div className="px-8 pb-8">
-                <div className="mb-4">
-                  <span className="text-primary text-xs font-bold tracking-wider">LATEST</span>
-                </div>
-                <h3 className="text-2xl font-bold mb-4 uppercase">The Scripts That Break Us</h3>
-                <p className="text-base text-muted-foreground mb-8 leading-relaxed">Mary Beth and Mallory dive deep into the unconscious patterns that keep us stuck in drama cycles. This episode explores how we unknowingly participate in our own suffering.</p>
-                <a href="#" className="inline-block px-8 py-3 bg-primary text-white text-xs font-bold tracking-[0.15em] hover:bg-white hover:text-primary transition-colors rounded-lg">
-                  WATCH NOW
-                </a>
-              </div>
-            </div>
-            <div className="md:col-span-4 flex flex-col gap-8">
-              {[2, 3].map((i) => (
-                <div key={i} className="group border-2 border-border bg-card hover:border-primary transition-colors rounded-lg overflow-hidden flex-1">
-                  <div className="w-full h-32 overflow-hidden mb-4">
-                    <img src={`https://picsum.photos/seed/episode-${i}/400/200`} alt={`Episode ${i}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                  </div>
-                  <div className="px-6 pb-6">
-                    <div className="mb-2">
-                      <span className="text-primary text-[10px] font-bold tracking-wider">LATEST</span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="group bg-card hover:border-primary transition-colors overflow-hidden">
+                <div className="w-full h-64 overflow-hidden mb-6 relative group aspect-square">
+                  <img src={`https://picsum.photos/seed/episode-${i}/600/600`} alt={`Episode ${i}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center">
+                      <svg className="w-8 h-8 text-[#9B002F] ml-1" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
                     </div>
-                    <h3 className="text-base font-bold mb-2 uppercase">The Scripts That Break Us</h3>
-                    <a href="#" className="inline-block px-5 py-2 bg-primary text-white text-[10px] font-bold tracking-[0.15em] hover:bg-white hover:text-primary transition-colors rounded-lg">
-                      WATCH NOW
-                    </a>
                   </div>
                 </div>
-              ))}
-            </div>
+                <div className="px-6 pb-6">
+                  <h3 className="text-xl font-bold mb-3 uppercase">The Scripts That Break Us</h3>
+                  <p className="text-base text-muted-foreground mb-6 leading-relaxed">Mary Beth and Mallory dive deep into the unconscious patterns that keep us stuck in drama cycles.</p>
+                  <a href="#" className="inline-block px-6 py-3 bg-primary text-white text-xs font-bold tracking-[0.15em] hover:bg-white hover:text-primary transition-colors rounded-full">
+                    WATCH NOW
+                  </a>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* FEATURED ARTICLES */}
-      <section className="border-b border-border px-6 py-28">
-        <div className="max-w-[1160px] mx-auto">
-          <div className="flex items-end gap-4 mb-16">
-            <div className="w-2 h-20 bg-secondary" />
+      <section className="px-6 py-28">
+        <div className="max-w-[1550px] mx-auto">
+          <div className="mb-16">
             <h2 className="mb-0 text-5xl uppercase">Featured Articles</h2>
           </div>
 
@@ -135,12 +135,11 @@ export default function App() {
       </section>
 
       {/* COMMUNITY PARTICIPATION */}
-      <section className="border-b border-border px-6 py-24 bg-gradient-to-r from-secondary/10 via-transparent to-primary/10">
-        <div className="max-w-[1160px] mx-auto">
+      <section className="px-6 py-24 bg-gradient-to-r from-secondary/10 via-transparent to-primary/10">
+        <div className="max-w-[1550px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-1 h-8 bg-primary" />
+              <div className="mb-6">
                 <h2 className="mb-0">SHARE YOUR TRUTH</h2>
               </div>
               <p className="text-xl text-muted-foreground font-bold leading-relaxed mb-8">
@@ -165,10 +164,9 @@ export default function App() {
       </section>
 
       {/* HOSTS */}
-      <section className="border-b border-border px-6 py-20">
-        <div className="max-w-[1160px] mx-auto">
-          <div className="flex items-center gap-3 mb-12">
-            <div className="w-1 h-8 bg-primary" />
+      <section className="px-6 py-20">
+        <div className="max-w-[1550px] mx-auto">
+          <div className="mb-12">
             <h2 className="mb-0">MEET THE HOSTS</h2>
           </div>
 
@@ -191,11 +189,10 @@ export default function App() {
 
       {/* FOOTER */}
       <footer className="px-6 py-16 bg-gradient-to-t from-secondary/20 to-transparent">
-        <div className="max-w-[1160px] mx-auto">
+        <div className="max-w-[1550px] mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
             <div>
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-2 h-12 bg-primary" />
+              <div className="mb-6">
                 <span className="text-white text-sm tracking-[0.15em] font-bold">KILL MY CRAZY</span>
               </div>
               <p className="text-muted-foreground text-sm max-w-xs">
