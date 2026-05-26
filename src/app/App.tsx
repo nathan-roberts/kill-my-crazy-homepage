@@ -30,8 +30,8 @@ export default function App() {
                 <div className="w-1 h-12 bg-primary" />
                 <span className="text-primary text-xs tracking-[0.25em] font-bold">PODCAST</span>
               </div>
-              <h1 className="mb-10 leading-[1.1]">
-                Exposing the Noise
+              <h1 className="mb-10 leading-[1.1] uppercase">
+                EXPOSING THE NOISE
               </h1>
               <p className="text-2xl text-muted-foreground font-bold leading-relaxed mb-10 max-w-lg">
                 Dedicated to exposing the scripts that break us down and make us crazy. We offer coffee table conversations where friends call each other out.
@@ -63,7 +63,7 @@ export default function App() {
         <div className="max-w-[1160px] mx-auto">
           <div className="flex items-center gap-4 mb-16">
             <div className="w-2 h-16 bg-primary" />
-            <h2 className="mb-0 text-5xl">Latest Episodes</h2>
+            <h2 className="mb-0 text-5xl uppercase">Latest Episodes</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
@@ -75,7 +75,7 @@ export default function App() {
                 <div className="mb-4">
                   <span className="text-primary text-xs font-bold tracking-wider">LATEST</span>
                 </div>
-                <h3 className="text-2xl font-bold mb-4">The Scripts That Break Us</h3>
+                <h3 className="text-2xl font-bold mb-4 uppercase">The Scripts That Break Us</h3>
                 <p className="text-base text-muted-foreground mb-8 leading-relaxed">Mary Beth and Mallory dive deep into the unconscious patterns that keep us stuck in drama cycles. This episode explores how we unknowingly participate in our own suffering.</p>
                 <a href="#" className="inline-block px-8 py-3 bg-primary text-white text-xs font-bold tracking-[0.15em] hover:bg-white hover:text-primary transition-colors rounded-lg">
                   WATCH NOW
@@ -92,7 +92,7 @@ export default function App() {
                     <div className="mb-2">
                       <span className="text-primary text-[10px] font-bold tracking-wider">LATEST</span>
                     </div>
-                    <h3 className="text-base font-bold mb-2">The Scripts That Break Us</h3>
+                    <h3 className="text-base font-bold mb-2 uppercase">The Scripts That Break Us</h3>
                     <a href="#" className="inline-block px-5 py-2 bg-primary text-white text-[10px] font-bold tracking-[0.15em] hover:bg-white hover:text-primary transition-colors rounded-lg">
                       WATCH NOW
                     </a>
@@ -109,7 +109,7 @@ export default function App() {
         <div className="max-w-[1160px] mx-auto">
           <div className="flex items-end gap-4 mb-16">
             <div className="w-2 h-20 bg-secondary" />
-            <h2 className="mb-0 text-5xl">Featured Articles</h2>
+            <h2 className="mb-0 text-5xl uppercase">Featured Articles</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -122,7 +122,7 @@ export default function App() {
                   <div className="mb-4">
                     <span className="text-secondary text-xs font-bold tracking-wider">DEEP DIVE</span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4">Living in the Drama Zone</h3>
+                  <h3 className="text-2xl font-bold mb-4 uppercase">Living in the Drama Zone</h3>
                   <p className="text-lg text-muted-foreground mb-8 leading-relaxed">How your brain scripts fights before they even happen—and what you can do about it. This article explores the neuroscience behind conflict patterns.</p>
                   <a href="#" className="inline-block px-8 py-3 bg-secondary text-white text-xs font-bold tracking-[0.15em] hover:bg-white hover:text-secondary transition-colors rounded-lg">
                     READ MORE
@@ -141,7 +141,7 @@ export default function App() {
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-1 h-8 bg-primary" />
-                <h2 className="mb-0">Share Your Truth</h2>
+                <h2 className="mb-0">SHARE YOUR TRUTH</h2>
               </div>
               <p className="text-xl text-muted-foreground font-bold leading-relaxed mb-8">
                 Join the conversation. Record your truth bomb or share your written story with the community.
@@ -169,7 +169,7 @@ export default function App() {
         <div className="max-w-[1160px] mx-auto">
           <div className="flex items-center gap-3 mb-12">
             <div className="w-1 h-8 bg-primary" />
-            <h2 className="mb-0">Meet the Hosts</h2>
+            <h2 className="mb-0">MEET THE HOSTS</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-[900px] mx-auto">
