@@ -147,8 +147,8 @@ export default function App() {
         {/* Geometric pattern overlay */}
         <div className="absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none">
           <svg width="100%" height="100%" viewBox="0 0 1200 400" preserveAspectRatio="none" className="w-full h-full">
-            <path d="M0 200 Q100 50, 200 200 T400 200 T600 200 T800 200 T1000 200 T1200 200" stroke="white" strokeWidth="3" fill="none" opacity="0.6" />
-            <path d="M0 200 Q100 350, 200 200 T400 200 T600 200 T800 200 T1000 200 T1200 200" stroke="white" strokeWidth="2" fill="none" opacity="0.4" />
+            <path d="M0 200 Q100 50, 200 200 T400 200 T600 200 T800 200 T1000 200 T1200 200" stroke="#000" strokeWidth="6" fill="none" opacity="0.9" />
+            <path d="M0 200 Q100 350, 200 200 T400 200 T600 200 T800 200 T1000 200 T1200 200" stroke="#000" strokeWidth="8" fill="none" opacity="0.9" />
           </svg>
         </div>
         <div className="relative z-10 max-w-[1550px] mx-auto">
