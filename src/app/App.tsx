@@ -81,7 +81,7 @@ export default function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[1, 2, 3].map((i) => (
-              <div key={i} className="group bg-card hover:border-primary transition-colors overflow-hidden">
+              <div key={i} className="group bg-card hover:border-primary transition-colors overflow-hidden rounded-lg">
                 <div className="w-full h-64 overflow-hidden mb-6 relative group aspect-square">
                   <img src={`https://picsum.photos/seed/episode-${i}/600/600`} alt={`Episode ${i}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -95,12 +95,7 @@ export default function App() {
                 <div className="px-6 pb-6">
                   <h3 className="text-xl font-bold mb-3 uppercase">The Scripts That Break Us</h3>
                   <p className="text-base text-muted-foreground mb-6 leading-relaxed">Mary Beth and Mallory dive deep into the unconscious patterns that keep us stuck in drama cycles.</p>
-                  <a href="#" className="inline-flex items-center gap-3 py-3 text-white text-xs font-bold tracking-[0.15em] hover:text-primary transition-colors">
-                    <span className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                      <svg className="w-4 h-4 text-primary ml-0.5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </span>
+                  <a href="#" className="inline-block px-6 py-3 border-2 border-white text-white text-xs font-bold tracking-[0.15em] hover:bg-white hover:text-primary transition-all rounded-full">
                     WATCH NOW
                   </a>
                 </div>
