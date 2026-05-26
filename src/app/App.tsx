@@ -112,19 +112,23 @@ export default function App() {
             <h2 className="mb-0 text-5xl uppercase">Featured Articles</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[1, 2].map((i) => (
-              <div key={i} className="group border-2 border-border bg-card hover:border-secondary transition-colors rounded-lg overflow-hidden">
-                <div className="w-full h-72 overflow-hidden mb-6">
-                  <img src={`https://picsum.photos/seed/article-${i}/700/400`} alt={`Article ${i}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                </div>
-                <div className="px-8 pb-8">
-                  <div className="mb-4">
-                    <span className="text-secondary text-xs font-bold tracking-wider">DEEP DIVE</span>
+              <div key={i} className="group bg-card hover:border-primary transition-colors overflow-hidden rounded-lg">
+                <div className="w-full h-64 overflow-hidden mb-6 relative group aspect-square">
+                  <img src={`https://picsum.photos/seed/article-${i}/600/600`} alt={`Article ${i}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center">
+                      <svg className="w-8 h-8 text-[#9B002F] ml-1" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 uppercase">Living in the Drama Zone</h3>
-                  <p className="text-lg text-muted-foreground mb-8 leading-relaxed">How your brain scripts fights before they even happen—and what you can do about it. This article explores the neuroscience behind conflict patterns.</p>
-                  <a href="#" className="inline-block px-8 py-3 bg-secondary text-white text-xs font-bold tracking-[0.15em] hover:bg-white hover:text-secondary transition-colors rounded-lg">
+                </div>
+                <div className="px-6 pb-6">
+                  <h3 className="text-xl font-bold mb-3 uppercase">Living in the Drama Zone</h3>
+                  <p className="text-base text-muted-foreground mb-6 leading-relaxed">How your brain scripts fights before they even happen—and what you can do about it.</p>
+                  <a href="#" className="inline-block px-6 py-3 border-2 border-white text-white text-xs font-bold tracking-[0.15em] hover:bg-white hover:text-primary transition-all rounded-full">
                     READ MORE
                   </a>
                 </div>
@@ -135,27 +139,31 @@ export default function App() {
       </section>
 
       {/* COMMUNITY PARTICIPATION */}
-      <section className="px-6 py-24 bg-gradient-to-r from-secondary/10 via-transparent to-primary/10">
-        <div className="max-w-[1550px] mx-auto">
+      <section className="px-6 py-24 bg-[#9B002F] relative overflow-hidden">
+        {/* Geometric pattern overlay */}
+        <div className="absolute inset-0 opacity-10" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+        }} />
+        <div className="relative z-10 max-w-[1550px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
               <div className="mb-6">
-                <h2 className="mb-0">SHARE YOUR TRUTH</h2>
+                <h2 className="mb-0 text-white">SHARE YOUR TRUTH</h2>
               </div>
-              <p className="text-xl text-muted-foreground font-bold leading-relaxed mb-8">
+              <p className="text-xl text-white/90 font-bold leading-relaxed mb-8">
                 Join the conversation. Record your truth bomb or share your written story with the community.
               </p>
               <div className="flex gap-4">
-                <a href="#" className="px-8 py-3 bg-primary text-white text-xs font-bold tracking-[0.1em] hover:bg-white hover:text-primary transition-colors rounded-lg">
+                <a href="#" className="px-8 py-3 bg-white text-[#9B002F] text-xs font-bold tracking-[0.1em] hover:bg-[#9B002F] hover:text-white border-2 border-white transition-colors rounded-lg">
                   RECORD YOUR TRUTH BOMB
                 </a>
-                <a href="#" className="px-8 py-3 border-2 border-primary text-primary text-xs font-bold tracking-[0.1em] hover:bg-primary hover:text-white transition-colors rounded-lg">
+                <a href="#" className="px-8 py-3 border-2 border-white text-white text-xs font-bold tracking-[0.1em] hover:bg-white hover:text-[#9B002F] transition-colors rounded-lg">
                   WRITE YOUR STORY
                 </a>
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="w-48 h-48 border-4 border-primary rounded-full flex items-center justify-center bg-primary/10">
+              <div className="w-48 h-48 border-4 border-white rounded-full flex items-center justify-center bg-white/10">
                 <span className="text-5xl">🎙️</span>
               </div>
             </div>
@@ -188,7 +196,7 @@ export default function App() {
       </section>
 
       {/* FOOTER */}
-      <footer className="px-6 py-16 bg-gradient-to-t from-secondary/20 to-transparent">
+      <footer className="px-6 py-16">
         <div className="max-w-[1550px] mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
             <div>
