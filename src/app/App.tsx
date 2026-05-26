@@ -49,7 +49,7 @@ export default function App() {
                   WATCH NOW
                 </a>
                 <a href="#" className="px-10 py-4 border-2 border-white/30 text-white text-xs tracking-[0.15em] font-bold hover:bg-white hover:text-[#0a0a1a] transition-all rounded-lg text-center">
-                  RECORD YOUR TRUTH
+                  SHARE YOUR STORY
                 </a>
               </div>
             </div>
@@ -141,11 +141,19 @@ export default function App() {
       {/* COMMUNITY PARTICIPATION */}
       <section className="px-6 py-24 bg-[#9B002F] relative overflow-hidden">
         {/* Geometric pattern overlay */}
-        <div className="absolute inset-0 opacity-10" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-        }} />
+        <div className="absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none">
+          <svg width="100%" height="100%" viewBox="0 0 1200 400" preserveAspectRatio="none" className="w-full h-full">
+            <path d="M0 200 Q100 50, 200 200 T400 200 T600 200 T800 200 T1000 200 T1200 200" stroke="white" strokeWidth="3" fill="none" opacity="0.6" />
+            <path d="M0 200 Q100 350, 200 200 T400 200 T600 200 T800 200 T1000 200 T1200 200" stroke="white" strokeWidth="2" fill="none" opacity="0.4" />
+          </svg>
+        </div>
         <div className="relative z-10 max-w-[1550px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-[30%_70%] gap-16 items-center">
+            <div className="flex justify-center">
+              <div className="w-48 h-48 border-4 border-white rounded-full flex items-center justify-center bg-[#9B002F] shadow-2xl">
+                <span className="text-8xl transform scale-x-[-1]">🎙️</span>
+              </div>
+            </div>
             <div>
               <div className="mb-6">
                 <h2 className="mb-0 text-white">SHARE YOUR TRUTH</h2>
@@ -160,11 +168,6 @@ export default function App() {
                 <a href="#" className="px-8 py-3 border-2 border-white text-white text-xs font-bold tracking-[0.1em] hover:bg-white hover:text-[#9B002F] transition-colors rounded-lg">
                   WRITE YOUR STORY
                 </a>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <div className="w-48 h-48 border-4 border-white rounded-full flex items-center justify-center bg-white/10">
-                <span className="text-5xl">🎙️</span>
               </div>
             </div>
           </div>
