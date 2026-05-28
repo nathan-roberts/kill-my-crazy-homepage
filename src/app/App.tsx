@@ -82,16 +82,9 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[1, 2, 3].map((i) => (
               <div key={i} className="group bg-card hover:border-primary transition-colors overflow-hidden rounded-lg">
-                <div className="w-full h-64 overflow-hidden mb-0 relative group aspect-square">
-                  <img src={`https://picsum.photos/seed/episode-${i}/600/600`} alt={`Episode ${i}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center">
-                      <svg className="w-8 h-8 text-[#9B002F] ml-1" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
+                <div className="w-full overflow-hidden mb-0 relative group" style={{aspectRatio: '1515/979'}}>
+                  <img src="/images/thumb.png" alt={`Episode ${i}`} className="w-full h-full object-cover  transition-transform" />
+                                  </div>
                 <div className="px-6 pb-6 pt-6 bg-[#9B002F]">
                   <h3 className="text-xl font-bold mb-3 uppercase text-white">The Scripts That Break Us</h3>
                   <p className="text-base text-white/90 mb-6 leading-relaxed">Mary Beth and Mallory dive deep into the unconscious patterns that keep us stuck in drama cycles.</p>
@@ -119,16 +112,9 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[1, 2].map((i) => (
               <div key={i} className="group bg-card hover:border-primary transition-colors overflow-hidden rounded-lg">
-                <div className="w-full h-64 overflow-hidden mb-0 relative group aspect-square">
-                  <img src={`https://picsum.photos/seed/article-${i}/600/600`} alt={`Article ${i}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center">
-                      <svg className="w-8 h-8 text-[#9B002F] ml-1" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
+                <div className="w-full overflow-hidden mb-0 relative group" style={{aspectRatio: '1515/979'}}>
+                  <img src={`https://picsum.photos/seed/article-${i}/600/600`} alt={`Article ${i}`} className="w-full h-full object-cover  transition-transform" />
+                                  </div>
                 <div className="px-6 pb-6 pt-6 bg-[#9B002F]">
                   <h3 className="text-xl font-bold mb-3 uppercase text-white">Living in the Drama Zone</h3>
                   <p className="text-base text-white/90 mb-6 leading-relaxed">How your brain scripts fights before they even happen—and what you can do about it.</p>
