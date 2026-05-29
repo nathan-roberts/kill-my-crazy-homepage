@@ -56,9 +56,8 @@ export default function App() {
             <div className="relative">
               <div className="relative">
                 {/* Circular glowing frame */}
-                <div className="w-96 h-96 md:w-[500px] md:h-[500px] border-4 border-[#9B002F]/30 overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#9B002F]/20 via-purple-900/20 to-[#9B002F]/20" />
-                  <img src="https://picsum.photos/seed/podcast-hero/600/750" alt="Podcast Visual" className="w-full h-full object-cover mix-blend-overlay" />
+                <div className="w-96 h-48 md:w-[500px] md:h-[250px] border-4 border-[#9B002F]/30 overflow-hidden relative" style={{aspectRatio: '2/1'}}>
+                  <img src="/images/hero.png" alt="Podcast Visual" className="w-full h-full object-cover" />
                 </div>
                 {/* Rim lighting effects */}
                 <div className="absolute -inset-4 bg-gradient-to-r from-[#9B002F]/40 to-purple-900/40 blur-xl -z-10" />
