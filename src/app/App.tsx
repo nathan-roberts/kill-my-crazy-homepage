@@ -1,6 +1,6 @@
 export default function App() {
   return (
-    <div className="min-h-screen bg-background font-sans relative">
+    <div className="min-h-screen bg-background relative" style={{fontFamily: '"Montserrat", sans-serif'}}>
       {/* HEADER - Transparent overlay */}
       <header className="absolute top-0 left-0 right-0 z-50 px-6 py-6">
         <div className="max-w-[1550px] mx-auto flex items-center justify-between">

@@ -8,15 +8,15 @@
   --card-foreground: #ffffff;
   --popover: #0f294d;
   --popover-foreground: #ffffff;
-  --primary: #9B002F;
+  --primary: #13294B;
   --primary-foreground: #ffffff;
-  --secondary: #9b002f;
+  --secondary: #800020;
   --secondary-foreground: #ffffff;
   --muted: rgba(255, 255, 255, 0.72);
   --muted-foreground: #ffffff;
-  --accent: #9b002f;
+  --accent: #800020;
   --accent-foreground: #ffffff;
-  --destructive: #9B002F;
+  --destructive: #800020;
   --destructive-foreground: #ffffff;
   --border: rgba(255, 255, 255, 0.18);
   --input: transparent;
@@ -24,21 +24,21 @@
   --switch-background: #cbced4;
   --font-weight-medium: 800;
   --font-weight-normal: 700;
-  --ring: #9B002F;
-  --chart-1: #9b002f;
-  --chart-2: #9B002F;
+  --ring: #13294B;
+    --chart-1: #800020;
+    --chart-2: #13294B;
   --chart-3: #132f57;
   --chart-4: #0f294d;
   --chart-5: #f1f4f8;
   --radius: 0.75rem;
   --sidebar: #0f294d;
   --sidebar-foreground: #ffffff;
-  --sidebar-primary: #9B002F;
+  --sidebar-primary: #13294B;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #132f57;
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: rgba(255, 255, 255, 0.18);
-  --sidebar-ring: #9B002F;
+  --sidebar-ring: #13294B;
   --heading-color: #ffffff;
 }
 
@@ -141,7 +141,7 @@
   h1,
   h2,
   h3 {
-    font-family: "Barlow", sans-serif, system-ui;
+    font-family: "Montserrat", sans-serif, system-ui;
     font-weight: 700;
     color: #fff;
     line-height: 48px;
