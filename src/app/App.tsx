@@ -22,8 +22,8 @@ export default function App() {
 
       {/* HERO SECTION - Full-width dark cinematic */}
       <section className="relative py-30 flex items-center overflow-hidden">
-        {/* Dark gradient background with atmospheric texture */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1a] via-[#0f1429] to-[#1a0a20]" />
+        {/* Dark blue gradient background with atmospheric texture */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0f172a] via-[#13294B] to-[#1e3a5f]" />
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDIiLz4KPC9zdmc+')] opacity-30" />
 
         {/* Atmospheric glow effects */}
@@ -33,10 +33,10 @@ export default function App() {
 
         {/* Content */}
         <div className="relative z-10 max-w-[1550px] mx-auto px-6 py-32">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div>
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-16 items-center">
+            <div className="md:col-span-2">
               <div className="mb-8">
-                <span className="text-primary text-xs tracking-[0.25em] font-bold">PODCAST</span>
+                <span className="text-[#800020] text-xs tracking-[0.25em] font-bold">PODCAST</span>
               </div>
               <h1 className="mb-8 leading-[0.95] uppercase text-white text-6xl md:text-7xl font-black tracking-tight">
                 EXPOSING THE NOISE
@@ -53,18 +53,18 @@ export default function App() {
                 </a>
               </div>
             </div>
-            <div className="relative">
+            <div className="md:col-span-3 relative">
               <div className="relative">
-                {/* Circular glowing frame */}
-                <div className="w-96 h-48 md:w-[500px] md:h-[250px] border-4 border-[#9B002F]/30 overflow-hidden relative" style={{aspectRatio: '2/1'}}>
-                  <img src="/images/hero.png" alt="Podcast Visual" className="w-full h-full object-cover" />
+                {/* Full featured rectangular photo */}
+                <div className="w-full max-w-none border-4 border-[#9B002F]/30 overflow-hidden relative shadow-2xl">
+                  <img src="/images/hero.png" alt="Mary Beth and Mallory" className="w-full h-full object-cover" />
                 </div>
-                {/* Rim lighting effects */}
+                {/* Enhanced rim lighting effects for rectangular format */}
                 <div className="absolute -inset-4 bg-gradient-to-r from-[#9B002F]/40 to-purple-900/40 blur-xl -z-10" />
                 <div className="absolute -inset-2 bg-gradient-to-br from-[#9B002F]/30 to-[#9b002f]/30 blur-lg -z-10" />
-                {/* Glow orbs */}
-                <div className="absolute -top-8 -right-8 w-24 h-24 bg-[#9B002F]/40 blur-2xl animate-pulse" />
-                <div className="absolute -bottom-8 -left-8 w-20 h-20 bg-purple-500/40 blur-2xl animate-pulse" style={{ animationDelay: '1s' }} />
+                {/* Glow orbs positioned for rectangular layout */}
+                <div className="absolute -top-6 -right-6 w-32 h-32 bg-[#9B002F]/40 blur-2xl animate-pulse" />
+                <div className="absolute -bottom-6 -left-6 w-28 h-28 bg-purple-500/40 blur-2xl animate-pulse" style={{ animationDelay: '1s' }} />
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ export default function App() {
             {[1, 2, 3].map((i) => (
               <div key={i} className="group bg-card hover:border-primary transition-colors overflow-hidden">
                 <div className="w-full overflow-hidden mb-0 relative group" style={{aspectRatio: '1515/979'}}>
-                  <img src="/images/thumb.png" alt={`Episode ${i}`} className="w-full h-full object-cover  transition-transform" />
+                  <img src={`/images/thumb-${i}.png`} alt={`Episode ${i}`} className="w-full h-full object-cover  transition-transform" />
                                   </div>
                 <div className="px-6 pb-6 pt-6 bg-[#9B002F]">
                   <h3 className="text-xl font-bold mb-3 uppercase text-white">The Scripts That Break Us</h3>
