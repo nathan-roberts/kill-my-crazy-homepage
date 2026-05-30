@@ -32,7 +32,7 @@ export default defineConfig({
   },
   
   // GitHub Pages configuration
-  base: '/Kill-My-Crazy-Wireframe/',
+  base: '/kill-my-crazy-homepage/',
   build: {
     outDir: 'docs',
     assetsDir: 'assets',
