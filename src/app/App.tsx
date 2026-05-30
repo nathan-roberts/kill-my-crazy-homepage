@@ -57,7 +57,7 @@ export default function App() {
               <div className="relative">
                 {/* Full featured rectangular photo */}
                 <div className="w-full max-w-none border-4 border-[#9B002F]/30 overflow-hidden relative shadow-2xl">
-                  <img src="/images/hero.png" alt="Mary Beth and Mallory" className="w-full h-full object-cover" />
+                  <img src="./images/hero.png" alt="Mary Beth and Mallory" className="w-full h-full object-cover" />
                 </div>
                 {/* Enhanced rim lighting effects for rectangular format */}
                 <div className="absolute -inset-4 bg-gradient-to-r from-[#9B002F]/40 to-purple-900/40 blur-xl -z-10" />
@@ -82,7 +82,7 @@ export default function App() {
             {[1, 2, 3].map((i) => (
               <div key={i} className="group bg-card hover:border-primary transition-colors overflow-hidden">
                 <div className="w-full overflow-hidden mb-0 relative group" style={{aspectRatio: '1515/979'}}>
-                  <img src={`/images/thumb-${i}.png`} alt={`Episode ${i}`} className="w-full h-full object-cover  transition-transform" />
+                  <img src={`./images/thumb-${i}.png`} alt={`Episode ${i}`} className="w-full h-full object-cover  transition-transform" />
                                   </div>
                 <div className="px-6 pb-6 pt-6 bg-[#9B002F]">
                   <h3 className="text-xl font-bold mb-3 uppercase text-white">The Scripts That Break Us</h3>
