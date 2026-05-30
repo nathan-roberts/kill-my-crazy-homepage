@@ -34,7 +34,7 @@ export default defineConfig({
   // GitHub Pages configuration
   base: '/kill-my-crazy-homepage/',
   build: {
-    outDir: 'dist',
+    outDir: 'docs',
     assetsDir: 'assets',
   },
 
