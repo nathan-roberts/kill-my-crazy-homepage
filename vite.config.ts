@@ -30,6 +30,13 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  
+  // GitHub Pages configuration
+  base: '/Kill-My-Crazy-Wireframe/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  },
 
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
