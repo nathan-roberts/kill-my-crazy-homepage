@@ -5,7 +5,7 @@ export default function App() {
   const [currentPage, setCurrentPage] = useState<'home' | 'article'>('home');
 
   if (currentPage === 'article') {
-    return <SampleArticle />;
+    return <SampleArticle onNavigateHome={() => setCurrentPage('home')} />;
   }
 
   return (
