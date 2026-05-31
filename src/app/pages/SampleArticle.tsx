@@ -11,10 +11,6 @@ export default function SampleArticle({ onNavigateHome }: SampleArticleProps) {
       <article className="prose prose-lg max-w-none">
         <header className="mb-8">
           <div className="flex items-center gap-4 text-sm text-gray-400 mb-6">
-            <span className="bg-[#9B002F]/20 text-[#ff6b9d] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide border border-[#9B002F]/30">
-              Podcast Episode
-            </span>
-            <span>•</span>
             <time>May 31, 2026</time>
             <span>•</span>
             <span>8 min read</span>
