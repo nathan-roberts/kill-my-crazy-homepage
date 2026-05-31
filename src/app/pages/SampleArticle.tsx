@@ -58,29 +58,12 @@ export default function SampleArticle({ onNavigateHome }: SampleArticleProps) {
             Our podcast is dedicated to exposing the invisible scripts and bad habits that destroy relationships.
           </p>
 
-          <div className="bg-[#9B002F]/10 border border-[#9B002F]/30 rounded-lg p-6 my-8">
-            <h3 className="text-lg font-bold text-white mb-4">Our Core Values</h3>
-            <ul className="space-y-3 text-gray-300">
-              <li className="flex items-start">
-                <span className="text-[#ff6b9d] mr-3">•</span>
-                <div>
-                  <strong className="text-white">Shared Wisdom:</strong> We are building a community where lived experience is the key to finding common ground.
-                </div>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#ff6b9d] mr-3">•</span>
-                <div>
-                  <strong className="text-white">Soul Healing:</strong> We want to free you from the invisible burdens and labels weighing you down.
-                </div>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#ff6b9d] mr-3">•</span>
-                <div>
-                  <strong className="text-white">Kindness not Politeness:</strong> We are tackling the jagged edges of life that everyone else is too polite—or too crazed—to mention.
-                </div>
-              </li>
-            </ul>
-          </div>
+          <h3 className="text-2xl font-bold text-white mt-8 mb-4">Our Core Values</h3>
+          <ul className="list-disc pl-6 space-y-3 text-gray-300 mb-6">
+            <li><strong className="text-white">Shared Wisdom:</strong> We are building a community where lived experience is the key to finding common ground.</li>
+            <li><strong className="text-white">Soul Healing:</strong> We want to free you from the invisible burdens and labels weighing you down.</li>
+            <li><strong className="text-white">Kindness not Politeness:</strong> We are tackling the jagged edges of life that everyone else is too polite—or too crazed—to mention.</li>
+          </ul>
 
           <h2 className="text-2xl font-bold text-white mt-8 mb-4">Our Promise to You</h2>
           
