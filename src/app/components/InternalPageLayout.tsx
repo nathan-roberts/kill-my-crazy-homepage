@@ -60,6 +60,54 @@ export default function InternalPageLayout({ children, title, onNavigateHome }: 
           </div>
         </main>
       </div>
+      
+      {/* FOOTER */}
+      <footer className="relative z-10 bg-gray-900/95 backdrop-blur-sm border-t border-gray-700/50">
+        <div className="max-w-[1550px] mx-auto px-6 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {/* Logo and Tagline */}
+            <div className="md:col-span-2">
+              <div className="mb-4">
+                <span className="text-white text-sm tracking-[0.15em] font-bold">[ LOGO ]</span>
+              </div>
+              <p className="text-gray-300 text-sm leading-relaxed max-w-md">
+                Coffee table conversations where friends call each other out.
+              </p>
+            </div>
+
+            {/* Social Links */}
+            <div>
+              <h3 className="text-white text-xs tracking-[0.15em] font-bold mb-4 uppercase">SOCIAL</h3>
+              <div className="space-y-2">
+                <a href="#" className="block text-gray-300 text-sm hover:text-white transition-colors">IG</a>
+                <a href="#" className="block text-gray-300 text-sm hover:text-white transition-colors">TW</a>
+                <a href="#" className="block text-gray-300 text-sm hover:text-white transition-colors">FB</a>
+                <a href="#" className="block text-gray-300 text-sm hover:text-white transition-colors">YT</a>
+              </div>
+            </div>
+
+            {/* Watch and Contact */}
+            <div>
+              <h3 className="text-white text-xs tracking-[0.15em] font-bold mb-4 uppercase">WATCH</h3>
+              <div className="space-y-2 mb-4">
+                <a href="#" className="block text-gray-300 text-sm hover:text-white transition-colors">YouTube</a>
+              </div>
+              
+              <h3 className="text-white text-xs tracking-[0.15em] font-bold mb-2 uppercase">CONTACT</h3>
+              <a href="mailto:hello@killmycrazy.com" className="block text-gray-300 text-sm hover:text-white transition-colors">
+                hello@killmycrazy.com
+              </a>
+            </div>
+          </div>
+
+          {/* Copyright */}
+          <div className="mt-8 pt-8 border-t border-gray-700/50">
+            <p className="text-gray-400 text-xs text-center">
+              © 2026 KILL MY CRAZY PODCAST. ALL RIGHTS RESERVED.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
