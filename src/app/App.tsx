@@ -1,4 +1,13 @@
+import React, { useState } from 'react';
+import SampleArticle from './pages/SampleArticle';
+
 export default function App() {
+  const [currentPage, setCurrentPage] = useState<'home' | 'article'>('home');
+
+  if (currentPage === 'article') {
+    return <SampleArticle />;
+  }
+
   return (
     <div className="min-h-screen bg-background relative" style={{fontFamily: '"Montserrat", sans-serif'}}>
       {/* HEADER - Transparent overlay */}
@@ -9,9 +18,14 @@ export default function App() {
           </div>
 
           <nav className="flex gap-8">
-            <a href="#" className="text-white text-xs tracking-[0.1em] font-bold hover:text-primary transition-colors">EPISODES</a>
-            <a href="#" className="text-white text-xs tracking-[0.1em] font-bold hover:text-primary transition-colors">ARTICLES</a>
-            <a href="#" className="text-white text-xs tracking-[0.1em] font-bold hover:text-primary transition-colors">ABOUT</a>
+            <button className="text-white text-xs tracking-[0.1em] font-bold hover:text-primary transition-colors bg-transparent border-none cursor-pointer">EPISODES</button>
+            <button 
+              onClick={() => setCurrentPage('article')}
+              className="text-white text-xs tracking-[0.1em] font-bold hover:text-primary transition-colors bg-transparent border-none cursor-pointer"
+            >
+              ARTICLES
+            </button>
+            <button className="text-white text-xs tracking-[0.1em] font-bold hover:text-primary transition-colors bg-transparent border-none cursor-pointer">ABOUT</button>
           </nav>
 
           <a href="#" className="px-10 py-4 bg-white text-[#9B002F] text-xs tracking-[0.15em] font-bold hover:bg-[#9B002F] hover:text-white transition-colors">
