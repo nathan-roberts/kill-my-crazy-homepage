@@ -38,77 +38,33 @@ export default function InternalPageLayout({ children, title, onNavigateHome }: 
         </div>
       </header>
 
-      {/* MAIN CONTENT */}
-      <div className="relative z-10 max-w-[1550px] mx-auto px-6 pt-32 pb-16">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          {/* SIDEBAR */}
-          <aside className="lg:col-span-1">
-            <div className="sticky top-32">
-              <nav className="bg-gray-900/90 backdrop-blur-sm rounded-lg border border-gray-700/50 p-6">
-                <h3 className="text-lg font-bold text-white mb-4 uppercase tracking-wide">Navigation</h3>
-                <ul className="space-y-2">
-                  <li>
-                    <a href="/articles" className="block px-3 py-2 text-sm text-gray-300 hover:text-white hover:bg-gray-800 rounded transition-colors">
-                      All Articles
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/articles/category/relationships" className="block px-3 py-2 text-sm text-gray-300 hover:text-white hover:bg-gray-800 rounded transition-colors">
-                      Relationships
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/articles/category/personal-growth" className="block px-3 py-2 text-sm text-gray-300 hover:text-white hover:bg-gray-800 rounded transition-colors">
-                      Personal Growth
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/articles/category/communication" className="block px-3 py-2 text-sm text-gray-300 hover:text-white hover:bg-gray-800 rounded transition-colors">
-                      Communication
-                    </a>
-                  </li>
-                </ul>
+      {/* HERO SECTION */}
+      <section className="relative py-20 flex items-center">
+        {/* Atmospheric glow effects */}
+        <div className="absolute top-10 right-20 w-64 h-64 bg-[#9B002F]/10 blur-2xl" />
+        <div className="absolute bottom-10 left-20 w-48 h-48 bg-secondary/20 blur-2xl" />
 
-                <div className="mt-8">
-                  <h4 className="text-sm font-bold text-white mb-3 uppercase tracking-wide">Recent Posts</h4>
-                  <ul className="space-y-3">
-                    <li>
-                      <a href="/articles/sample-post-1" className="block group">
-                        <p className="text-sm text-gray-300 group-hover:text-white transition-colors line-clamp-2">
-                          Understanding the Scripts That Control Our Relationships
-                        </p>
-                        <p className="text-xs text-gray-500 mt-1">2 days ago</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/articles/sample-post-2" className="block group">
-                        <p className="text-sm text-gray-300 group-hover:text-white transition-colors line-clamp-2">
-                          Breaking Free from Drama Cycles
-                        </p>
-                        <p className="text-xs text-gray-500 mt-1">1 week ago</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/articles/sample-post-3" className="block group">
-                        <p className="text-sm text-gray-300 group-hover:text-white transition-colors line-clamp-2">
-                          The Power of Honest Communication
-                        </p>
-                        <p className="text-xs text-gray-500 mt-1">2 weeks ago</p>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </aside>
-
-          {/* MAIN CONTENT AREA */}
-          <main className="lg:col-span-3">
-            <div className="bg-gray-900/90 backdrop-blur-sm rounded-lg border border-gray-700/50 p-8">
-              {children}
-            </div>
-          </main>
+        {/* Content */}
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+          <div className="mb-6">
+            <span className="text-[#ff6b9d] text-xs tracking-[0.25em] font-bold">ARTICLES</span>
+          </div>
+          <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-[0.95] uppercase tracking-tight">
+            {title || 'Insights & Stories'}
+          </h1>
+          <p className="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
+            Deep dives into the patterns that shape our relationships, practical wisdom for breaking free from drama cycles, and honest conversations about what it means to show up authentically.
+          </p>
         </div>
+      </section>
+
+      {/* MAIN CONTENT */}
+      <div className="relative z-10 max-w-4xl mx-auto px-6 pb-16">
+        <main>
+          <div className="bg-gray-900/90 backdrop-blur-sm rounded-lg border border-gray-700/50 p-8">
+            {children}
+          </div>
+        </main>
       </div>
     </div>
   );
