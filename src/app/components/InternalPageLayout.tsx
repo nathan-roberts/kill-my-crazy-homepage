@@ -15,14 +15,8 @@ export default function InternalPageLayout({ children, title, onNavigateHome }: 
       {/* HEADER - Dark cinematic matching homepage */}
       <header className="absolute top-0 left-0 right-0 z-50 px-6 py-6">
         <div className="max-w-[1550px] mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-4">
+          <div className="mb-2">
             <span className="text-white text-sm tracking-[0.15em] font-bold">[ LOGO ]</span>
-            {title && (
-              <>
-                <span className="text-white/60">/</span>
-                <span className="text-white/90 text-sm tracking-[0.1em] font-medium">{title}</span>
-              </>
-            )}
           </div>
 
           <nav className="flex gap-8">
