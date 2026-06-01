@@ -117,28 +117,6 @@ export default function SampleArticle({ onNavigateHome }: SampleArticleProps) {
               Record Your Story
             </button>
           </div>
-
-          <footer className="mt-12 pt-8 border-t border-gray-700">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-[#9B002F] rounded-full flex items-center justify-center text-white font-bold">
-                  MB
-                </div>
-                <div>
-                  <p className="font-bold text-white">Mary Beth & Mallory</p>
-                  <p className="text-sm text-gray-400">Hosts of Kill My Crazy</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <button className="px-4 py-2 text-sm text-gray-400 hover:text-white transition-colors">
-                  Share Episode
-                </button>
-                <button className="px-4 py-2 text-sm text-gray-400 hover:text-white transition-colors">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-          </footer>
         </div>
       </article>
     </InternalPageLayout>
